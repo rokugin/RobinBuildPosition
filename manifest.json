@@ -1,0 +1,11 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "Name": "Robin Build Position",
+  "Description": "Reads <something> and sets Robin's position when she's working on upgrading buildings.",
+  "Author": "rokugin",
+  "UniqueID": "rokugin.robinbuildposition",
+  "Version": "1.0.0",
+  "EntryDll": "RobinBuildPosition.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}
