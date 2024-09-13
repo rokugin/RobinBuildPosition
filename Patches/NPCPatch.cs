@@ -1,14 +1,11 @@
-﻿using HarmonyLib;
-using StardewValley;
-using StardewValley.Buildings;
+﻿using StardewValley.Buildings;
 using StardewValley.GameData.Buildings;
+using StardewValley;
 
 namespace RobinBuildPosition.Patches;
+internal class NPCPatch {
 
-[HarmonyPatch(typeof(NPC), "updateConstructionAnimation")]
-static class NPCPatch {
-
-    static void Postfix(NPC __instance) {
+    public static void UpdateConstructionAnimation_Postfix(NPC __instance) {
         if (Game1.IsThereABuildingUnderConstruction()) {
             Building b = Game1.GetBuildingUnderConstruction();
             BuildingData data = b.GetData();
@@ -34,4 +31,3 @@ static class NPCPatch {
     }
 
 }
-
