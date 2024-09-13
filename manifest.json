@@ -1,11 +1,11 @@
 {
   "$schema": "https://smapi.io/schemas/manifest.json",
   "Name": "Robin Build Position",
-  "Description": "Reads <something> and sets Robin's position when she's working on upgrading buildings.",
+  "Description": "Reads CustomFields field and sets Robin's position when she's working on upgrading or constructing buildings.",
   "Author": "rokugin",
   "UniqueID": "rokugin.robinbuildposition",
   "Version": "1.0.0",
   "EntryDll": "RobinBuildPosition.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [ "Nexus:27753" ]
 }
