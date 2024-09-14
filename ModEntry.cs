@@ -7,7 +7,11 @@ namespace RobinBuildPosition;
 
 internal class ModEntry : Mod {
 
+    public static IMonitor? SMonitor;
+
     public override void Entry(IModHelper helper) {
+        SMonitor = Monitor;
+
         var harmony = new Harmony(ModManifest.UniqueID);
 
         harmony.Patch(

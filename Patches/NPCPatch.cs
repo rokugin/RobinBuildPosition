@@ -6,9 +6,13 @@ namespace RobinBuildPosition.Patches;
 internal class NPCPatch {
 
     public static void UpdateConstructionAnimation_Postfix(NPC __instance) {
+        if (__instance.Name != "Robin") return;
         if (Game1.IsThereABuildingUnderConstruction()) {
             Building b = Game1.GetBuildingUnderConstruction();
             BuildingData data = b.GetData();
+            if (b.upgradeName.Value != null) {
+                data = Game1.buildingData[b.upgradeName.Value];
+            }
             int X = 1, Y = 5;
 
             if (data != null && data.CustomFields != null && data.CustomFields.TryGetValue("rokugin.robinbuildposition", out string? value)) {
