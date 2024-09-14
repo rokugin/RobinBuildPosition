@@ -87,7 +87,7 @@ Editing an existing building's data requires the use of the `TargetField` field:
 }
 ```
 
-More info on how `TargetField` works can be found on the  <a href="https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editdata.md#target-fields" target="_blank">CP docs</a>.<br>
+More info on how `TargetField` works can be found on the [CP docs](https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editdata.md#target-fields).<br>
 
 `CustomFields` takes `"<key>": "<value>"` pairs, and since we've targeted `CustomFields` with our `TargetField` we can just directly provide our entry in `Entries`.<br>
 
